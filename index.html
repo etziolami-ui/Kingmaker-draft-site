@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="T.A.B. (Tiny Ass Browser) — a from-scratch browser engine in pure Rust. Unreleased: this is the draft of the future download page. No binaries exist yet.">
+<meta name="robots" content="noindex">
+<title>T.A.B. — Tiny Ass Browser · Download (draft)</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Cpath%20d='M14%2010%20H30%20L36%2018%20H48%20Q56%2018%2056%2026%20V46%20Q56%2054%2048%2054%20H16%20Q8%2054%208%2046%20V18%20L14%2010%20Z'%20fill='none'%20stroke='%235cc8ff'%20stroke-width='5'%20stroke-linejoin='round'/%3E%3Cpath%20d='M18%2032%20H46'%20stroke='%235cc8ff'%20stroke-width='5'%20stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="container head-row">
+    <a class="brand" href="#top" aria-label="T.A.B. — back to top">
+      <svg class="mark" viewBox="0 0 64 64" width="30" height="30" aria-hidden="true" focusable="false">
+        <path class="mark-outline" d="M14 10 H30 L36 18 H48 Q56 18 56 26 V46 Q56 54 48 54 H16 Q8 54 8 46 V18 L14 10 Z"/>
+        <path class="mark-bar" d="M18 32 H46"/>
+      </svg>
+      <span class="brand-name">T.A.B.</span>
+    </a>
+    <nav class="site-nav" aria-label="Page">
+      <a href="#download">Download</a>
+      <a href="#why">Why</a>
+      <a href="#conformance">Conformance</a>
+      <a class="nav-src" href="https://github.com/etziolami-ui/Kingmaker">Source <span class="visually-hidden">(GitHub — private during development)</span></a>
+    </nav>
+    <p class="draft-pill" role="note"><span class="dot" aria-hidden="true"></span>DRAFT — not released</p>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="container">
+      <p class="hero-kicker">A browser engine, from scratch</p>
+      <div class="hero-lockup">
+        <svg class="hero-mark" viewBox="0 0 64 64" width="120" height="120" aria-hidden="true" focusable="false">
+          <path class="mark-outline" d="M14 10 H30 L36 18 H48 Q56 18 56 26 V46 Q56 54 48 54 H16 Q8 54 8 46 V18 L14 10 Z"/>
+          <path class="mark-bar" d="M18 32 H46"/>
+        </svg>
+        <h1 id="hero-title" class="wordmark">T.A.B.</h1>
+      </div>
+      <p class="expansion">Tiny Ass Browser</p>
+      <p class="lede">A from-scratch browser engine in pure Rust — HTML parsing, CSS cascade,
+      block/flex/grid layout, CPU paint, and its own JavaScript VM — measured row&nbsp;by&nbsp;row
+      against the web&rsquo;s real conformance catalogs.</p>
+
+      <p class="cta-row">
+        <a class="cta" href="https://github.com/etziolami-ui/Kingmaker">Get notified on GitHub&nbsp;&rarr;</a>
+      </p>
+      <p class="cta-note">No binaries are published yet — T.A.B. is unreleased, and watching the
+      repository is the only real notification channel today.</p>
+    </div>
+  </section>
+
+  <section class="honesty" aria-label="Status">
+    <div class="container">
+      <p><strong>This is a draft page.</strong> T.A.B. is an engine and a conformance program,
+      not a shipping browser. There are no downloads, no release dates, and no version numbers
+      yet. Everything on this page is either measured or explicitly marked as a placeholder.</p>
+    </div>
+  </section>
+
+  <section class="section" id="download" aria-labelledby="download-title">
+    <div class="container">
+      <h2 id="download-title">Download</h2>
+      <p class="section-sub">There is nothing to download yet — no <code>.deb</code>, <code>.dmg</code>,
+      or <code>.exe</code>, no checksums, no signed installers. Anything offering them is not T.A.B.
+      When binaries ship, this section becomes the real download page.</p>
+
+      <div class="platforms">
+        <article class="platform primary">
+          <h3>Linux · x86_64</h3>
+          <p class="p-status">First target — in active development</p>
+          <p class="btn-row">
+            <a class="btn" href="https://github.com/etziolami-ui/Kingmaker">Get notified / watch the repo</a>
+          </p>
+          <p class="p-note">No binary is published yet. The button above is a pointer, not a download.</p>
+        </article>
+        <article class="platform">
+          <h3>macOS</h3>
+          <p class="p-status">In development — not available</p>
+          <p class="btn-row"><span class="btn btn-ghost" aria-disabled="true">Not available yet</span></p>
+          <p class="p-note">No date announced. Development is focused on Linux first.</p>
+        </article>
+        <article class="platform">
+          <h3>Windows</h3>
+          <p class="p-status">In development — not available</p>
+          <p class="btn-row"><span class="btn btn-ghost" aria-disabled="true">Not available yet</span></p>
+          <p class="p-note">No date announced. Development is focused on Linux first.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="why" aria-labelledby="why-title">
+    <div class="container">
+      <h2 id="why-title">Why another engine</h2>
+      <p class="section-sub">Six claims, each checkable in the repository — no roadmap promises.</p>
+      <div class="why-grid">
+        <article class="card">
+          <h3>A real JavaScript engine</h3>
+          <p><code>km-js</code>: a from-scratch lexer&nbsp;&rarr; parser&nbsp;&rarr; bytecode&nbsp;&rarr; VM in pure
+          Rust, with its own DOM arena and mark-sweep collector. It runs unmodified React&nbsp;18 headless —
+          mount, update, click, text&nbsp;input.</p>
+        </article>
+        <article class="card">
+          <h3>A real render pipeline</h3>
+          <p>HTML parse (<code>km-dom</code>) &rarr; CSS cascade (<code>km-css</code>) &rarr;
+          block/flex/grid/inline/table layout (<code>km-layout</code>) &rarr; box tree
+          (<code>km-render</code>) &rarr; CPU paint (<code>km-raster</code>), with fonts
+          (<code>km-font</code>) and images (<code>km-image</code>: PNG, JPEG, GIF, SVG).</p>
+        </article>
+        <article class="card">
+          <h3>Measured, not marketed</h3>
+          <p>Five conformance catalogs with pinned denominators: the WPT rendering, testharness, and
+          remaining-compatibility sets, plus Test262 and the upstream WebAssembly spec suite. Per-row
+          identity comparison — every attempted row is itemized, nothing is averaged away.</p>
+        </article>
+        <article class="card">
+          <h3>Zero native C dependencies</h3>
+          <p>Enforced structurally by CI: no <code>-sys</code> or <code>-dl</code> crates in the product
+          graph, and the linked binaries are <code>ldd</code>-checked. The only dynamic link is glibc —
+          the standard Rust runtime on Linux. TLS is pure-Rust rustls.</p>
+        </article>
+        <article class="card">
+          <h3>Hostile input expected</h3>
+          <p>Single-process by design, so the engine treats every page as adversarial:
+          <code>catch_unwind</code> at untrusted-input seams, panic-family lints denied at compile time,
+          byte- and depth-budgets on untrusted input.</p>
+        </article>
+        <article class="card">
+          <h3>Written in Rust</h3>
+          <p>636,648 lines of Rust across 30 crates.<sup><a href="#fn-size" id="fn-size-ref">*</a></sup>
+          No V8. No SpiderMonkey. No C in the product graph.</p>
+        </article>
+      </div>
+      <p class="footnote" id="fn-size">* <code>find crates -name '*.rs' | xargs wc -l | tail -1</code>,
+      counted 2026-10-10 across all 30 workspace crates, including legacy-path crates being superseded.</p>
+    </div>
+  </section>
+
+  <section class="section" id="conformance" aria-labelledby="conf-title">
+    <div class="container">
+      <h2 id="conf-title">Conformance, row by row</h2>
+      <p class="section-sub">Percentages are computed in your browser from the raw counts below —
+      nothing is pre-baked into the page. A row passes or it doesn&rsquo;t; failed, timed-out, crashed,
+      and skipped rows are all shown.</p>
+
+      <div class="conf-meta" id="conf-meta" aria-live="polite"></div>
+
+      <div class="table-wrap" id="conf-table-wrap" aria-busy="true">
+        <p class="conf-loading">Loading conformance numbers&hellip;</p>
+      </div>
+
+      <p class="conf-legend">Freshness: <span class="badge badge-fresh">fresh</span> = measured in this
+      snapshot &middot; <span class="badge badge-carried">carried from an earlier run</span> = totals from
+      a previous full run, shown because no newer run exists — never presented as fresh. Suites with no
+      data at all would read &ldquo;not yet measured&rdquo;. The raw file is
+      <a href="data/conformance.json">data/conformance.json</a>.</p>
+      <p class="conf-legend" id="conf-decompose"></p>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title">Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>What is T.A.B. today?</summary>
+          <p>A browser <em>engine</em> plus its conformance program: parsing, styling, layout, painting,
+          a JavaScript VM, a DOM, and the measurement harness that scores all of it against W3C/whatwg
+          catalogs. It is not a shipping browser — there is no UI product, installer, or release channel.</p>
+        </details>
+        <details>
+          <summary>Can I download it?</summary>
+          <p>No. T.A.B. is unreleased and there are no binaries. This page is a draft of the download
+          page that will exist when there is something to download.</p>
+        </details>
+        <details>
+          <summary>Where is the source?</summary>
+          <p>The engine is developed in a single Rust workspace:
+          <a href="https://github.com/etziolami-ui/Kingmaker">github.com/etziolami-ui/Kingmaker</a> —
+          private during development. Public source and binaries are part of the (not yet scheduled) release.</p>
+        </details>
+        <details>
+          <summary>What about the domain?</summary>
+          <p><span class="tentative">tab.tools — domain TBD.</span> That name is tentative placeholder
+          branding; nothing is registered or confirmed, and the real address will be announced with the release.</p>
+        </details>
+        <details>
+          <summary>Where do the conformance numbers come from?</summary>
+          <p>From the project&rsquo;s internal conformance board, which renders both sides of every row
+          and compares them. This site renders a copy of that board&rsquo;s snapshot
+          (<code>data/conformance.json</code>) with vanilla JavaScript. Suites flagged
+          <code>measured: false</code> in the snapshot are labelled &ldquo;carried from an earlier run&rdquo;.
+          No dates, version numbers, sizes, or user counts are invented anywhere on this page.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="container foot-row">
+    <p><span class="brand-name">T.A.B.</span> — Tiny Ass Browser. Draft page, not a release announcement.</p>
+    <p class="foot-muted">Static page: no trackers, no external requests, no web fonts. Renders offline.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

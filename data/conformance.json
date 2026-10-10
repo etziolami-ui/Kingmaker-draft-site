@@ -1,0 +1,65 @@
+{
+ "board_run": "20261010T131758Z-194d7e512b3c",
+ "suites": {
+  "wpt-reftest-full": {
+   "label": "WPT - complete rendering catalog",
+   "passed": 24199,
+   "attempted": 30888,
+   "failed": 6689,
+   "timed_out": 0,
+   "crashed": 0,
+   "harness_errors": 0,
+   "skipped": 0,
+   "not_run": 0,
+   "measured": true
+  },
+  "wpt-other-full": {
+   "label": "WPT - remaining compatibility catalog",
+   "passed": 50929,
+   "attempted": 59710,
+   "failed": 2273,
+   "timed_out": 15,
+   "crashed": 11,
+   "harness_errors": 96,
+   "skipped": 6386,
+   "not_run": 0,
+   "measured": false
+  },
+  "wpt-testharness-full": {
+   "label": "WPT - complete testharness catalog",
+   "passed": 1434192,
+   "attempted": 1585538,
+   "failed": 125121,
+   "timed_out": 5961,
+   "crashed": 0,
+   "harness_errors": 3494,
+   "skipped": 452,
+   "not_run": 16318,
+   "measured": false
+  },
+  "wasm-spec-full": {
+   "label": "WebAssembly - complete upstream spec catalog",
+   "passed": 137546,
+   "attempted": 138130,
+   "failed": 168,
+   "timed_out": 12,
+   "crashed": 0,
+   "harness_errors": 4,
+   "skipped": 400,
+   "not_run": 0,
+   "measured": false
+  },
+  "test262-full": {
+   "label": "Test262 - complete upstream catalog",
+   "passed": 93098,
+   "attempted": 98040,
+   "failed": 4138,
+   "timed_out": 34,
+   "crashed": 21,
+   "harness_errors": 0,
+   "skipped": 0,
+   "not_run": 749,
+   "measured": false
+  }
+ }
+}
